@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Muestra articulos por id</h2>
+
+    {% for articulo in articulos %}
+        <h4>Nombre</h4>
+        <p>{{ articulo.nombre }}
+        <h4>Precio</h4>
+        <p>{{ articulo.precio }}</p>
+        <hr>
+    {% endfor %}
+    {#{{ dump(articulos) }}#}
+
+{% endblock %}
